@@ -8,18 +8,38 @@
     <title>Document</title>
 </head>
 
-<body>
-    <div class="container">
+<body class="bg--body">
+    <div class="flex__content container flex--wrap--column">
         <header>
             <section class="logo">
                 <div class="banner"></div>
             </section>
-            <nav class="nav justify-content-center">
-              <a class="nav-link active" href="#">Active link</a>
-              <a class="nav-link" href="#">Link</a>
-              <a class="nav-link disabled" href="#">Disabled link</a>
-            </nav>
+
         </header>
+
+        <section class="flex__content content flex--wrap--column">
+            <div class="box box-small box-medium  box-large box-full  sign__up bg--light">
+                <div class="sign__up___header">
+                    <div class="sign__up___title color--blue--dark font--upper ">
+                        <h3 class="">Inscreva-se</h3>
+                    </div>
+                </div>
+                <div class="sign__up___text">
+                    <div class="sign__up___text____items"></div>
+                </div>
+            </div>
+            <div class="box box-small box-medium  box-large box-full sign__in bg--light">
+                    <div class="sign__in___header">
+                        <div class="sign__in___title color--blue--dark">
+                            <h3>JÁ SOU CADASTRADO
+                                </h3>
+                        </div>
+                    </div>
+                    <div class="sign__in___text">
+                        <div class="sign__in___text____items"></div>
+                    </div>
+                </div>
+        </section>
     </div>
 
     <script src="./index.js"></script>
