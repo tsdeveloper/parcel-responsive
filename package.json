@@ -1,0 +1,32 @@
+{
+  "name": "sample_responsive",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel watch ./src/index.html --no-hmr --public-url ./ & npm run browsersync",
+    "parcel-test": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --public-url ./",
+    "fix": "eslint \"src/*.js\" --fix && stylelint \"src/*.scss\" --fix",
+    "eslint": "eslint \"src/*.js\"",
+    "stylelint": "stylelint \"src/*.scss\"",
+    "lint": "npm run eslint && npm run stylelint",
+    "precommit": "lint-staged",
+    "browsersync": "node browsersync.js"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "browser-sync": "^2.26.7",
+    "parcel-bundler": "^1.12.3"
+  }
+}

@@ -1,0 +1,19 @@
+@import 'library/_boot';
+@import 'custom/custom';
+
+.container {
+    background: red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.logo {
+    width: 100%;
+    height: 10rem;
+
+    &.banner {
+        height: 100%;
+        background: url('http://fmaistestes2.azurewebsites.net/imagensgeral/012601/top_012601.jpg') #fff no-repeat center
+    }
+}
